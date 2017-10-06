@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Web sajt</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        <div id="header"> Password</div>
+        <div id="contentContainer">
+            <div id="content">
+                <input id="upper" type="checkbox" name="letter" value="upper"><label for="checkbox">Uppercase</label><br><br>
+                <input id="lower" type="checkbox" name="letter" value="lower" checked><label for="checkbox">Lowercase</label><br><br>
+                <input id="nums" type="checkbox" name="num" value="nums"><label for="checkbox">Numbers</label><br><br>
+                <input id="symbols" type="checkbox" name="symbol" value="symbols"><label for="checkbox">Symbols</label><br><br>
+                <p>Max length:</p>
+                <input id="length" type="text" name="length">
+                <input id="output" type="text" name="output" maxlength="24">
+                <button id="generate" type="button" onclick="generate()">Generate password</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
